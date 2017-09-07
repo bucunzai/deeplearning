@@ -88,7 +88,7 @@ np.random.seed(1)
 # - Use random initialization for the weight matrices. Use `np.random.randn(shape)*0.01` with the correct shape.
 # - Use zero initialization for the biases. Use `np.zeros(shape)`.
 
-# In[4]:
+# In[88]:
 
 # GRADED FUNCTION: initialize_parameters
 
@@ -112,7 +112,7 @@ def initialize_parameters(n_x, n_h, n_y):
     ### START CODE HERE ### (≈ 4 lines of code)
     W1 = np.random.randn(n_h, n_x)*0.01
     b1 = np.zeros(n_h).reshape(n_h,1)
-    W2 = np.random.randn(n_y,n_h)
+    W2 = np.random.randn(n_y,n_h)*0.01
     b2 = np.zeros(n_y).reshape(n_y,1)
     ### END CODE HERE ###
     
@@ -129,7 +129,7 @@ def initialize_parameters(n_x, n_h, n_y):
     return parameters    
 
 
-# In[5]:
+# In[89]:
 
 parameters = initialize_parameters(2,2,1)
 print("W1 = " + str(parameters["W1"]))
