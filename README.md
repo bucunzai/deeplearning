@@ -1,4 +1,4 @@
 # deeplearning
 Deep Learning Exercises
 
-## Delete code : Due to Deep Learning Honor Code
+## Do not copy code : Due to Deep Learning Honor Code
